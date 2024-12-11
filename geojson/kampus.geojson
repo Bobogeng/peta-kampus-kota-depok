@@ -1,0 +1,71 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "kampus": "Kampus A STT Terpadu Nurul Fikri",
+                "alamat": "Jl. Situ Indah 116, Tugu, Cimanggis, Depok, Jawa Barat."
+            },
+            "geometry": {
+                "coordinates": [106.84419607934501, -6.362791705811588],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "kampus": "Kampus B STT Terpadu Nurul Fikri",
+                "alamat": "Jl. Raya Lenteng Agung No.20-21, RT.4/RW.1, Srengseng Sawah, Kec. Jagakarsa, Jakarta Selatan, DKI Jakarta."
+            },
+            "geometry": {
+                "coordinates": [106.83268623516608, -6.3528794062128355],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "kampus": "Perpustakaan Universitas Indonesia",
+                "alamat": "Gedung Crystal of Knowledge, Jl. Letjen DR. Sjarif Thajeb, Pondok Cina, Kecamatan Beji, Kota Depok, Jawa Barat 16424"
+            },
+            "geometry": {
+                "coordinates": [106.82974406787378, -6.365184983168049],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "kampus": "Universitas Pancasila",
+                "alamat": "Jl. Lenteng Agung Raya No.56, RT.1/RW.3, Srengseng Sawah, Kec. Jagakarsa, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12630"
+            },
+            "geometry": {
+                "coordinates": [106.8331038805826, -6.339247166180755],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "kampus": "Universitas Gunadarma Kampus E - Depok",
+                "alamat": "Jl. Komjen.Pol.M.Jasin No.9, Tugu, Kec. Cimanggis, Kota Depok, Jawa Barat 16451"
+            },
+            "geometry": {
+                "coordinates": [106.84150548191104, -6.353937015144325],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "kampus": "Politeknik Negeri Media Kreatif Jakarta",
+                "alamat": "Jl. Srengseng Sawah Raya No.17, RT.8/RW.3, Srengseng Sawah, Kec. Jagakarsa, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12630"
+            },
+            "geometry": {
+                "coordinates": [106.82732721621164, -6.347080949760382],
+                "type": "Point"
+            }
+        }
+    ]
+}
