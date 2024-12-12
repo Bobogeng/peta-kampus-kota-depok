@@ -1,11 +1,9 @@
-// Handle CDN error
 function handleCDNError(cdnName) {
     console.error(`${cdnName} failed to load.`);
     document.getElementById("loading").style.display = "none"; // Hide loading spinner
     document.getElementById("error-message").style.display = "block"; // Show error message
 }
 
-// Function to load CSS dynamically
 function loadCSS(url, onErrorCallback) {
     const link = document.createElement("link");
     link.rel = "stylesheet";
@@ -15,16 +13,14 @@ function loadCSS(url, onErrorCallback) {
     document.head.appendChild(link);
 }
 
-// Function to load JS dynamically
 function loadJS(url, onLoadCallback, onErrorCallback) {
     const script = document.createElement("script");
     script.src = url;
-    script.onload = onLoadCallback; // Call the onLoadCallback once the script is loaded
-    script.onerror = () => onErrorCallback(url); // If an error occurs, call the error callback
+    script.onload = onLoadCallback;
+    script.onerror = () => onErrorCallback(url);
     document.body.appendChild(script);
 }
 
-// Initialize map function
 const initMap = () => {
     const map = L.map("map").setView([-6.402905, 106.778419], 13);
 
@@ -42,7 +38,6 @@ const initMap = () => {
     fetchGeoJSONData(map);
 };
 
-// Fetch GeoJSON data
 const fetchGeoJSONData = (map) => {
     document.getElementById("loading").style.display = "flex";
     document.getElementById("error-message").style.display = "none";
@@ -74,16 +69,12 @@ const fetchGeoJSONData = (map) => {
         });
 };
 
-// Window onload: Load the required resources
 window.onload = () => {
-    // Load the Leaflet CSS
     loadCSS("https://unpkg.com/leaflet@1.9.4/dist/leaflet.css", handleCDNError);
 
-    // Load the Leaflet JS dynamically and initialize the map after it's loaded
     loadJS(
         "https://unpkg.com/leaflet@1.9.4/dist/leaflet.js",
         () => {
-            // Once the JS is loaded, call initMap()
             initMap();
         },
         handleCDNError
