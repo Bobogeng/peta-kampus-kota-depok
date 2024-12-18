@@ -1,7 +1,7 @@
 function handleCDNError(cdnName) {
     console.error(`${cdnName} failed to load.`);
-    document.getElementById("loading").style.display = "none"; // Hide loading spinner
-    document.getElementById("error-message").style.display = "block"; // Show error message
+    document.getElementById("loading").style.display = "none";
+    document.getElementById("error-message").style.display = "block";
 }
 
 function loadCSS(url, onErrorCallback) {
